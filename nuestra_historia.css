@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e6dddd;                                         
+    color: #0f0f0f;
+    font-size: 50px;
+}
+
+.menu-fijo {
+    background-color: #e4002b;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 20px 0px 0px 0px;
+
+}
+
+.menu-fijo .menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu-fijo .menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 25px;
+
+}
+
+.icono-whatsapp {
+    position: fixed;                                                                    /* Fija el ícono en la pantalla */
+    bottom: 20px;                                                                       /* Distancia desde la parte inferior */
+    right: 20px;                                                                         /* Distancia desde la derecha */
+    z-index: 1;                                                                        /* Asegura que el ícono esté siempre visible */
+}
+
+
+.icono-whatsapp img {
+    width: 50px;                                                                       /* Ancho del ícono */
+    height: 50px;                                                                     /* Altura del ícono */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.menu-fijo .menu li a:hover {
+    background-color: rgb(247, 188, 0.6);
+    border-radius: 20px;
+    transform: scale(1.1);                                                                                       /* Agrandar al pasar el ratón */
+    
+}
+
+
+body {
+    background-color: #fff9f2; /* fondo general */
+    font-size: 16px; /* tamaño de texto adecuado */
+    color: #333; /* color de texto principal */
+}
+
+.contenedor-historia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 20px 40px;
+    min-height: 100vh;
+}
+
+.tarjeta-biografia {
+    background-color: white;
+    padding: 40px;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.foto-fundador {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #e4002b;
+    margin-bottom: 20px;
+}
+
+.titulo-fundador {
+    font-family: 'Great Vibes', cursive;
+    font-size: 36px;
+    color: #e4002b; /* título destacado */
+    margin: 10px 0;
+}
+
+.subtitulo-fundador {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.texto-biografia {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
