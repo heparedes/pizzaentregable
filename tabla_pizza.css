@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e6dddd;                                         
+    color: #0f0f0f;
+    font-size: 20px;
+    padding-top: 5px; /* Ajusta según el tamaño de tu header */
+    
+}
+
+.menu-fijo {
+    background-color: #e4002b;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    border-radius: 20px 0px 0px 0px;
+}
+
+.menu-fijo .menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu-fijo .menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 25px;
+
+}
+
+.icono-whatsapp {
+    position: fixed;                                                                    /* Fija el ícono en la pantalla */
+    bottom: 20px;                                                                       /* Distancia desde la parte inferior */
+    right: 20px;                                                                         /* Distancia desde la derecha */
+    z-index: 1;                                                                        /* Asegura que el ícono esté siempre visible */
+}
+
+
+.icono-whatsapp img {
+    width: 50px;                                                                       /* Ancho del ícono */
+    height: 50px;                                                                     /* Altura del ícono */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.menu-fijo .menu li a:hover {
+    background-color: rgb(247, 188, 0.6);
+    border-radius: 20px;
+    transform: scale(1.1);                                                                                       /* Agrandar al pasar el ratón */
+}
+
+
+/* Contenedor principal */
+.contenedor-tabla {
+    max-width: 1000px;
+    margin: 140px auto 50px;
+    background-color: #fff9f2;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+/* Título decorativo */
+.titulo-pizzas {
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+    color: #e4002b;
+    margin-bottom: 20px;
+}
+
+/* Estilo de tabla */
+.tabla-pizzas {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 18px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tabla-pizzas th {
+    background-color: #e4002b;
+    color: white;
+    padding: 15px;
+}
+
+.tabla-pizzas td {
+    padding: 15px;
+    vertical-align: middle;
+}
+
+.tabla-pizzas img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Alternancia de colores */
+.fila-par {
+    background-color: #ffeee2;
+}
+
