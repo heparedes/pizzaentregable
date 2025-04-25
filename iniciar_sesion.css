@@ -122,3 +122,15 @@ button[type="submit"]:hover {
 .enlaces a:hover {
     text-decoration: underline;
 }
+
+#mail{
+    display: flex;
+    align-items: center;
+    justify-content: left
+}
+
+#contra{
+    display: flex;
+    align-items: center;
+    justify-content: left
+}
