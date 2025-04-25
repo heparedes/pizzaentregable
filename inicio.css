@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e6dddd;                                         
+    color: #0f0f0f;
+    font-size: 50px;
+}
+#video{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%); 
+    max-width: 99.9%;                                               /* Ancho máximo del video  */
+    max-height: 800px;                                           /* Altura máxima del video  */
+    object-fit: cover;                                            /* Ajusta el video para cubrir todo el contenedor sin distorsionarlo */
+    filter: brightness(50%);                                   /* Reduce la luminosidad del video */
+    border-radius: 10px;                                                        /* Bordes redondeados para un diseño más limpio */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-fijo {
+    background-color: #e4002b;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 20px 0px 0px 0px;
+
+}
+
+.menu-fijo .menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu-fijo .menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 25px;
+
+}
+
+#portada{
+    width: 300px;
+    border-radius: 20px;
+}
+.encabezado {
+    text-align: center;
+    background-color: #e4002b;
+    color: white;
+    padding: 100px 0 50px; /* Espacio para el menú fijo */
+}
+.encabezado h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 4rem;
+}
+
+.sobre-nosotros .imagenes-pizzas {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 20px;                                                          /*separacion de imagenes*/
+    margin: 100px;
+    transition: transform 0.3s ease;
+}
+
+.sobre-nosotros img {
+    width: 350px;                                                     /*tamaño de la imagen*/
+    height: 300px;
+    border-radius: 10px;
+}
+h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e4002b;
+    padding-top: 70px;
+}
+
+p{
+    padding-top: 40px;
+    font-size: 23px;
+    text-align: center;                             /* Centra el texto de los párrafos */
+    margin: 10px auto;                            /* Espaciado entre párrafos */
+    max-width: 1000px;                            /* Ancho máximo para mantener los párrafos centrados */
+}
+
+.icono-whatsapp {
+    position: fixed;                                                                    /* Fija el ícono en la pantalla */
+    bottom: 20px;                                                                       /* Distancia desde la parte inferior */
+    right: 20px;                                                                         /* Distancia desde la derecha */
+    z-index: 1;                                                                        /* Asegura que el ícono esté siempre visible */
+}
+
+
+.icono-whatsapp img {
+    width: 50px;                                                                       /* Ancho del ícono */
+    height: 50px;                                                                     /* Altura del ícono */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.menu-fijo .menu li a:hover {
+    background-color: rgb(247, 188, 0.6);
+    border-radius: 20px;
+    transform: scale(1.1);                                                                                       /* Agrandar al pasar el ratón */
+    
+
+}
+
+.imagenes-pizzas img:hover {
+    transform: scale(1.1);                                                                               /* Aumenta el tamaño de la imagen al pasar el cursor */
+}
