@@ -1,0 +1,124 @@
+.menu-fijo {
+    background-color: #e4002b;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 20px 0px 0px 0px;
+
+}
+
+.menu-fijo .menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu-fijo .menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 25px;
+
+}
+
+.icono-whatsapp {
+    position: fixed;                                                                    /* Fija el ícono en la pantalla */
+    bottom: 20px;                                                                       /* Distancia desde la parte inferior */
+    right: 20px;                                                                         /* Distancia desde la derecha */
+    z-index: 1;                                                                        /* Asegura que el ícono esté siempre visible */
+}
+
+
+.icono-whatsapp img {
+    width: 50px;                                                                       /* Ancho del ícono */
+    height: 50px;                                                                     /* Altura del ícono */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.menu-fijo .menu li a:hover {
+    background-color: rgb(247, 188, 0.6);
+    border-radius: 20px;
+    transform: scale(1.1);                                                                                       /* Agrandar al pasar el ratón */
+    
+
+}
+
+
+body {
+    background-color: #fff9f2;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 5px;
+}
+
+
+.contenedor-formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;                                                                  /*porcentajes*/
+}
+
+.formulario-login {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    width: 350px;
+    text-align: center;
+}
+
+.titulo-login {
+    font-family: 'Great Vibes', cursive;
+    color: #e4002b;
+    font-size: 50px;
+    margin-bottom: 40px;                                                                              /*agrandar form*/
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    background-color: #e4002b;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #b80022;
+}
+
+.enlaces {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.enlaces a {
+    text-decoration: none;
+    color: #e4002b;
+}
+
+.enlaces a:hover {
+    text-decoration: underline;
+}
